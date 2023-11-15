@@ -11,7 +11,9 @@ services:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
     ports:
-      - "443:443"      
+      - "443:443"   
+    volumes:
+      - ./renovate-config.js   
 
   nginx:
     image: nginx
