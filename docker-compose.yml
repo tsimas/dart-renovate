@@ -10,9 +10,7 @@ services:
       - NO_PROXY=".otp.hu"
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
-      - RENOVATE_CONFIG_FILE=./renovate/renovate-config.js
-    ports:
-      - "443:443"   
+      - RENOVATE_CONFIG_FILE=./renovate/renovate-config.js  
     volumes:
      - ./renovate:/mnt/c/Projects/dart-renovate 
 
