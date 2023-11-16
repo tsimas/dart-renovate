@@ -13,6 +13,5 @@ module.exports = {
     printConfig: true,
     requireConfig: false,
     httpProxy: "http://nginx:80",
-    httpsProxy: "https://nginx:443",
-    noProxy: ".github.com"
+    httpsProxy: "https://nginx:443"
   };
