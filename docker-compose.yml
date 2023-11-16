@@ -6,6 +6,7 @@ services:
     environment:
       - HTTPS_PROXY='https://nginx:443'
       - HTTP_PROXY='http://nginx:80'
+      - NO_PROXY='.github.com'
       - LOG_LEVEL=debug
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
