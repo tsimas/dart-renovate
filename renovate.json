@@ -1,5 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "httpProxy": "http://nginx:80",
-    "httpsProxy": "https://nginx:443"
+    "httpsProxy": "https://nginx:443",
+    "noProxy": ".github.com"
 }
