@@ -5,9 +5,8 @@ services:
     image: renovate/renovate:34.160.0
     environment:
       - HTTPS_PROXY=nginx:443
-      - HTTP_PROXY=http://nginx:80
       - LOG_LEVEL=debug
-      - NO_PROXY=".github.com"
+      - NO_PROXY='.github.com'
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
       - RENOVATE_CONFIG_FILE=/mnt/c/Projects/dart-renovate/renovate-config.js  
