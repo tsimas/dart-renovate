@@ -1,6 +1,6 @@
 module.exports = {
     /* endpoint: 'https://api.github.com/', */
-    token: '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',
+    token: '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',
     platform: 'github',
     logLevel: 'debug',
     onboardingConfig: {
