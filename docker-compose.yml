@@ -10,11 +10,11 @@ services:
       - NO_PROXY=""
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
-      - RENOVATE_CONFIG_FILE=/mnt/c/Projects/dart-renovate/renovate-config.js
+      - RENOVATE_CONFIG_FILE=./renovate/renovate-config.js
     ports:
       - "443:443"   
     volumes:
-     - /mnt/c/Projects/dart-renovate 
+     - ./renovate:/mnt/c/Projects/dart-renovate 
 
   nginx:
     image: nginx
