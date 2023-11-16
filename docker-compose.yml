@@ -4,6 +4,8 @@ services:
   renovate:
     image: renovate/renovate:latest
     environment:
+      - HTTPS_PROXY='https://nginx:443'
+      - HTTP_PROXY='http://nginx:80'
       - LOG_LEVEL=debug
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
