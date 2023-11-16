@@ -5,7 +5,7 @@ services:
     image: renovate/renovate:34.160.0
     environment:
       - HTTPS_PROXY=nginx:443
-      - HTTP_PROXY=nginx:80
+      - HTTP_PROXY=http://nginx:80
       - LOG_LEVEL=debug
       - NO_PROXY=".github.com"
       - NODE_TLS_REJECT_UNAUTHORIZED=0
