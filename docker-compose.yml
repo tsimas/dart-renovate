@@ -2,7 +2,7 @@ version: '3'
 
 services:
   renovate:
-    image: renovate/renovate:34.160.0
+    image: renovate/renovate:latest
     environment:
       - HTTPS_PROXY='https://nginx:443'
       - HTTP_PROXY='http://nginx:80'
