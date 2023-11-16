@@ -1,6 +1,6 @@
 module.exports = {
     /* endpoint: 'https://api.github.com/', */
-    token: 'xxx',
+    token: '',
     platform: 'github',
     logLevel: 'debug',
     onboardingConfig: {
@@ -8,8 +8,7 @@ module.exports = {
     },
     repositories: ['tsimas/dart-renovate'],
     renovateFork: true,
-    gitAuthor: "Julien <julien@caffeine.lu>",
-    username: "julienp",
+    username: "tsimas",
     onboarding: false,
     printConfig: true,
     requireConfig: false,

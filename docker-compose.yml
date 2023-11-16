@@ -5,20 +5,21 @@ services:
     image: renovate/renovate:34.160.0
     environment:
       - HTTPS_PROXY=nginx:443
-	    - HTTP_PROXY=nginx:80
-	    - LOG_LEVEL=debug
-      - NO_PROXY=
+      - HTTP_PROXY=nginx:80
+      - LOG_LEVEL=debug
+      - NO_PROXY=""
       - NODE_TLS_REJECT_UNAUTHORIZED=0
       - NODE_DEBUG="timer,http node index.js"
+      - RENOVATE_CONFIG_FILE=renovate-config.js
     ports:
       - "443:443"   
     volumes:
-      - ./renovate-config.js   
+     - /mnt/c/Projects/dart-renovate 
 
   nginx:
     image: nginx
     environment:
-      - DEBUG=1
+     - DEBUG=1
     ports:
-      - "80:80"
-	    - "443:443"
+     - "80:80"
+     - "443:443"
